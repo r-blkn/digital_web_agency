@@ -10,6 +10,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -210,6 +213,7 @@ body {
     line-height: 1;
 
     margin-bottom: 7vh;
+    margin-top: 3vh;
 }
 .banner__title {
     font-family: 'VT323', monospace;
@@ -222,6 +226,27 @@ body {
     font-weight: 300;
     text-align: right;
     margin-top: 7vh;
+
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
 /* Button */
@@ -265,8 +290,10 @@ body {
 .card {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: transparent;
 }
 
 .card__item {

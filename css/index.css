@@ -368,6 +368,9 @@ body {
 }
 
 /* Form */
+.form {
+    text-align: center;
+}
 .message__input {
     width: 100%;
 }

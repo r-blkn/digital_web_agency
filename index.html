@@ -17,11 +17,11 @@
 			<div class="header__iner">
 				<div class="header__logo">Digital MA</div>
 				<nav class="nav" id="nav">
-					<a class="nav__link" href="#" data-scroll="#about">About</a>
-					<a class="nav__link" href="#" data-scroll="#about">Projects</a>
-					<a class="nav__link" href="#" data-scroll="#about">Clints</a>
-					<a class="nav__link" href="#" data-scroll="#about">Message</a>
-					<a class="nav__link" href="#" data-scroll="#about">Contacts</a>
+					<a class="nav__link" href="#what__do" >About</a>
+					<a class="nav__link" href="#projects" >Projects</a>
+					<a class="nav__link" href="#clients" >Clients</a>
+					<a class="nav__link" href="#message" >Message</a>
+					<a class="nav__link" href="#" >Contacts</a>
 				</nav>
 				<button class="nav-toggle" id="nav_toggle" type="button">
                         <span class="nav-toggle__item">Menu</span>
@@ -31,6 +31,7 @@
 	</header>
 
 	<main class="page">
+
 		<section class="banner">
 			<div class="container">
 				<div class="banner__iner">
@@ -155,48 +156,49 @@
 						</div>
 		</section>
 
-		<section class="clients">
+		<section class="clients" id="clients">
 			<div class="container">
 				<div class="section__header">
 					<h3 class="section__suptitle">Working with </h3>
 					<h2 class="section__title">Our Clients</h2>
 				</div>
 				<div class="review__clients">
-					<div class="review__card col-12 col-ms-6 col-md-4 col-lg-3">
-						<div class="background__clients">
-							<img src="img/clients/clients_design.jpg" alt="Smiling girl designer">
-                            </div>
-							<div class="descriptions_clients">
-								<h3 class="clients__title">Victoria Designer</h3>
-								<h4 class="clients__company">Art Design Company</h4>
-								<p class="clients_review">Working with Deluxe digital agancy was collaborative and
-									insightful.</p>
-							</div>
-						</div>
-						<div class="review__card col-12 col-ms-6 col-md-4 col-lg-3">
-							<div class="background__clients">
-								<img src="img/clients/clients_developer.jpg" alt="Developer sitting at a desk and working at a computer">
-                            </div>
-								<div class="descriptions_clients">
-									<h3 class="clients__title">Andrew Developer</h3>
-									<h4 class="clients__company">Making Software Inc.</h4>
-									<p class="clients_review">We needed an agency to help with the digital strategy for
-										the commercial bank</p>
-								</div>
-							</div>
-							<div class="review__card col-12 col-ms-6 col-md-4 col-lg-3">
-								<div class="background__clients">
-									<img src="img/clients/clients_marketing.jpg" alt="A team of marketers is developing a new project">
-                            </div>
-									<div class="descriptions_clients">
-										<h3 class="clients__title">Khris Link-builder</h3>
-										<h4 class="clients__company">Marketing design</h4>
-										<p class="clients_review">This is an extremely rewarding experience working with
-											this company. Breakthrough of the Year.</p>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="review__card ">
+						<div class="clients__img">
+							<img class="img-fluid" src="img/clients/clients_design.jpg" alt="Smiling girl designer">
+                        </div>
+                        <div class="clients__text">
+                            <h3 class="clients__title">Victoria Designer</h3>
+                            <h4 class="clients__company">Art Design corp.</h4>
+                            <p class="clients_review">Working with Deluxe digital agancy was collaborative and
+                                insightful.</p>
+                        </div>
+					</div>
+                    <div class="review__card">
+                        <div class="clients__img">
+                            <img class="img-fluid" src="img/clients/clients_developer.jpg" alt="Developer sitting at a desk and working at a computer">
+                        </div>
+                        <div class="clients__text">
+                            <h3 class="clients__title">Andrew Developer</h3>
+                            <h4 class="clients__company">Making Software Inc.</h4>
+                            <p class="clients_review">We needed an agency to help with the digital strategy for
+                                the commercial bank</p>
+                        </div>
+                    </div>
+                    <div class="review__card">
+                        <div class="clients__img">
+                            <img class="img-fluid" src="img/clients/clients_marketing.jpg" alt="A team of marketers is developing a new project">
+                        </div>
+                        <div class="clients__text">
+                            <h3 class="clients__title">Khris Link-builder</h3>
+                            <h4 class="clients__company">Marketing design Inc.</h4>
+                            <p class="clients_review">This is an extremely rewarding experience working with
+                                this company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
 		</section>
 
 		<section class="message" id="message">
@@ -205,39 +207,39 @@
 					<h3 class="section__suptitle">Drop me a line.</h3>
 					<h2 class="section__title">Message us.</h2>
 				</div>
-				<div class="form__section">
+				<div class="form__section form-group row">
 					<form class="form">
-						<label for="message-form">
-                            Drop me a line.
-                        <input type="text" name="message" id="message-form" placeholder="Your message" autofocus>
-                        </label>
-						<br>
 						<label for="name">
                             Your name:
-                        <input type="text" name="name" id="name" required>
+                        <input class="message__input" class="message__input" type="text" name="name" id="name" placeholder="Name:" required>
                         </label>
 						<br>
 						<label for="email">
                             Your e-mail:
-                        <input type="email" name="email" id="email" required>
+                        <input class="message__input" type="email" name="email" id="email" placeholder="E-mail:" required>
                         </label>
 						<br>
 						<label for="phone">
                             Your phone:
-                        <input type="tel" name="phone" id="phone" required>
+                        <input class="message__input" type="tel" name="phone" id="phone" placeholder="Phone number" required>
                         </label>
-						<button type="submit">Send</button>
+                        <label for="message-form">
+                            Drop me a line.
+                        <input class="message__text" type="text" name="message" id="message-form" placeholder="Your message" autofocus>
+                        </label>
+						<button class="btn" type="submit">Send</button>
 					</form>
 				</div>
 			</div>
 		</section>
-	</main>
-	<footer class="footer" id="footer">
-          <div class="section__header">
-                <h3 class="section__suptitle">Information about us.</h3>
-                <h2 class="section__title">Contacts</h2>
-            </div>
 
+	</main>
+
+	<footer class="footer" id="footer">
+        <div class="section__header">
+            <h3 class="section__suptitle">Information about us.</h3>
+            <h2 class="section__title">Contacts</h2>
+        </div>
 
         <div>
             <h4>Find us:</h4>
@@ -258,9 +260,9 @@
                 </ul>
             </div>
             <div class="media-logotype">
-                <img class="what__do__logo" src="img/media-logo/fb.svg" alt="facebook logotype">
-                <img class="what__do__logo" src="img/media-logo/ldin.svg" alt="linkdin logotype" id="linkdin">
-                <img class="what__do__logo" src="img/media-logo/inst.svg" alt="instagram logotype">
+                <img class="what__do__logo" src="img/media-logo/fb.png" alt="facebook logotype">
+                <img class="what__do__logo" src="img/media-logo/ldin.png" alt="linkdin logotype" id="linkdin">
+                <img class="what__do__logo" src="img/media-logo/inst.png" alt="instagram logotype">
                 </div>
             </div>
             <div>

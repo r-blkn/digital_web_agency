@@ -342,10 +342,35 @@ body {
 
 
 /* Review Clients */
+.review__clients {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review__card {
+    margin: 0 1em;
+}
+
+.clients__img {
+    width: 100%;
+}
+
+.clients__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 
 .clients__company {
+    font-style: italic;
+    font-size: 0.9rem;
     font-weight: 300;
-    font-size: .95em;
-    margin-bottom: .5em;
-    text-align: left;
+    margin: .5rem 0;
+}
+
+/* Form */
+.message__input {
+    width: 100%;
+}
+.message__text {
+    width: 100%
 }

@@ -260,7 +260,17 @@ body {
     text-align: center;
 }
 
+/* What Do Cards */
+.what__do__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.card__item {
+    width: 25%;
+    padding: 0 1rem;
+}
 
 
 
@@ -281,3 +291,4 @@ body {
 .section__text {
     font-size: 0.8rem;
 }
+

@@ -318,6 +318,7 @@ body {
 }
 
 .card__list {
+    margin-top: 10px;
     text-align: left;
     list-style: none;
 }
@@ -329,7 +330,7 @@ body {
 }
 
 .section__title {
-     font-size: 1.5rem;
+     font-size: 1.7rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2vh;
@@ -368,12 +369,115 @@ body {
 }
 
 /* Form */
-.form {
-    text-align: center;
+.form__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.message__input {
-    width: 100%;
+
+.btn__form {
+    margin-top: 0;
+    justify-content: center;
 }
+
 .message__text {
-    width: 100%
+    position: relative;;
+    height: 150px;
+    width: 500px;
 }
+
+.naming__text {
+    position: relative;;
+    width: 500px;
+}
+
+/* Footer */
+.footer__list {
+    list-style: none;
+}
+
+.footer__list li address {
+    margin-bottom: 0;
+}
+
+.whatdo-list {
+    margin: 0 auto;
+}
+
+.maps {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Media query */
+@media (max-width: 770px){
+    .banner {
+        min-height: 650px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    /* navigation */
+    .nav {
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: rgba(77, 77, 77, 1);
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 30px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .header__logo {
+        margin: 10px;
+    }
+
+    .banner__suptitle {
+        font-size: 2rem;
+    }
+
+    .banner__title {
+        font-size: 4rem;
+    }
+
+    /* Card */
+    .card__item {
+        flex-wrap: column;
+        width: 50%;
+    }
+
+    .card__img img {
+        width: 125px;
+        margin-left: 65px;
+    }
+
+    /* Review */
+    .review__clients {
+        display: block;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-wrap: column;
+        justify-content: center;
+    }
+}
+

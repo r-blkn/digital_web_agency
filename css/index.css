@@ -93,8 +93,9 @@ body {
     transition: opacity .2s linear;
 }
 
-.av__link:hover {
+.nav__link:hover {
     color: #e3e3e3;
+    text-decoration: none;
 }
 
 .nav__link:hover:after,

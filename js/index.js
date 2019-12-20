@@ -1,3 +1,5 @@
+// Burger menu
+
 $("#nav_toggle").on("click", function(e) {
     e.preventDefault();
     $(this).toggleClass("active");
